@@ -55,15 +55,9 @@ typings/
 .env
 
 # gatsby files
-.cache/
-public
+.cache
 
-# Mac files
-.DS_Store
+#auto generate lock files 
+yarn.lock
+package-lock.json
 
-# Yarn
-yarn-error.log
-.pnp/
-.pnp.js
-# Yarn Integrity file
-.yarn-integrity
