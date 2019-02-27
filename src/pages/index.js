@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import TableComponent from "../components/table"
+import searchbar from "../components/searchbar"
 
 const tableData = {
   columns: ['EndrollementNo','StudentName','Branch','ContactNumber'],
@@ -45,6 +46,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <TableComponent tableData = {tableData}/>
+    
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
