@@ -1,23 +1,32 @@
 
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function searchbar() {
-  return (
-    <div>
-      <input type="textbox" className="input" placeholder="Searchbar.."/>
-    </div>
-  )
+
+class Searchbar extends Component {
+  state = {
+    query: '',
+  }
+  handleInputChange = () => {
+    this.setState({
+      query: this.Searchbar.value
+    })
+  }
+
+  render() {
+    return (
+      <form>
+        <input
+        
+          placeholder=" "
+          ref={input => this.Searchbar = input}
+          onChange={this.handleInputChange}
+        />
+        <button>Search from here</button>
+        <p>{this.state.query}</p>
+      </form>
+    )
+  }
 }
 
+export default Searchbar
 
-/*class Searchbar extends React.Component{
-    render(){
-        return(
-            <div>
-                <input type="text" className="input" placeholder="Searchbar.."/>
-               
-            </div>
-        )
-    }
-}
-export default Searchbar;*/
