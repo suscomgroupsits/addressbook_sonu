@@ -72,3 +72,6 @@ yarn-error.log
 yarn.lock
 package-lock.json
 
+
+public/static
+public/render-page.js.map
